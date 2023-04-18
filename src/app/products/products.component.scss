@@ -1,0 +1,81 @@
+body {   
+    width: 100%;
+    background: #020202;
+    padding: 5vh 0px 20vh 0px ;
+    z-index: 0;
+}
+
+.services {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 100px;
+    margin-bottom: 3vh;
+}
+
+.title  {
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700px;
+    color: #CDAA7D; 
+    text-align: center;
+    padding-bottom: 12vh;
+    font-style: italic;
+}
+
+.services_images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+
+.service {
+    width: 350px;
+    margin: 2vw;  
+    cursor: pointer;    
+}
+
+.service:hover {
+    transform: scale(1.2);
+}
+
+.services_images img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    object-position: center;
+    align-items:center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 1px rgb(117, 117, 117);
+}
+
+.services_images p {
+    width: 100%;
+    color: rgb(52, 50, 50);
+    position: relative;
+    bottom: 5px;   
+    background: linear-gradient(50deg, #ffecad 0,
+                                       #ffdca9 16.67%,
+                                       #ffcba4 33.33%, 
+                                       #f2b99d 50%, 
+                                       #dca896 66.67%, 
+                                       #c89a8f 83.33%, 
+                                       #b68e89 100%);
+                                       
+    padding: 15px;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 0px 0px 25px 0px;    
+}
+
+h3 {
+    color: rgb(221, 218, 218);
+    font-size: 4rem;
+    font-style: italic;
+    text-align: center;    
+}

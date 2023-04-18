@@ -1,0 +1,206 @@
+body {   
+    width: 100%;
+    background: #020202;
+    color:rgb(222, 220, 219);
+    padding: 10vh 0px 25vh 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.service_container {
+    width: 80%; 
+    margin: 0 auto;  
+    display: flex;  
+    justify-content: center;
+    padding-bottom: 15vh;    
+}
+
+.note {
+    font-size: 1.3rem;
+    font-style: italic;    
+    padding-bottom: 2vh;
+}
+.image_container {
+    width:35%;
+    margin-right: 7vw;
+    padding-top: 1vh;
+}
+
+.service-description {
+    width: 60%; 
+}
+
+.image_container img {  
+    width:100%;  
+    justify-content: center;
+    margin-right: 7vw;
+    margin-top: 2vh;
+    border-radius: 7px;
+}
+
+.service-title {     
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #CDAA7D;
+    padding-bottom: 3vh;
+}
+.subtitle {     
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #CDAA7D;
+    padding-bottom: 3vh;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    font-size: 1.17rem;
+    color:rgb(170, 167, 163);
+    line-height: 120%;
+    padding-bottom: 2vh;
+    position:relative;    
+}
+
+.service-list span {
+    color: #CDAA7D;
+    font-weight:bolder;
+}
+
+.icon {
+    width:25px;
+    position: absolute;
+    left: -3vw;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10vh;
+    font-weight: 600;
+}
+
+.slider_container {
+    width: 33%;
+    height: 80vh;
+    margin-bottom: 15vh;
+} 
+
+.carousel-indicators {
+    position: relative;
+    top: 69vh;
+}
+
+.carousel-item img {
+    width: 70%;  
+    height: 63vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}  
+
+.carousel-control-prev-icon {
+    position: relative;
+    left: -7vw;
+}
+
+.carousel-control-next {
+    right: -7vw;
+}
+
+
+/* Предложение */
+
+.offer_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20vh;
+}
+
+.offer_container h3 { 
+    font-size: 2.1rem;
+    font-weight: 500;
+    font-style: italic;
+    color:#CDAA7D;
+    padding-bottom: 5vh;
+}
+
+.text_container {
+    width: 70%;
+}
+
+.offer_container p {
+    color: rgb(207, 197, 203);
+    font-size: 1.1rem;
+    line-height: 150%;
+    padding-bottom: 3vh;
+    color:rgb(222, 220, 219);
+}
+
+.img_container img {
+  width: 32vw;
+}
+
+
+
+/* Цены */
+.service-price_container {
+    width: 85%; 
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;    
+    /* flex-wrap: wrap;  */
+}
+
+.service {
+    width: 40%;   
+    margin-bottom: 10vh;
+    padding-bottom: 4vh;
+}
+
+.service h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    color:#CDAA7D;    
+}
+
+.service-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 1px dotted #CDAA7D;
+}
+
+.service-item p, .service-item span {
+    font-size: 1.3rem;
+    line-height: 200%;    
+}
+
+.services-btn {
+    width: 20vw;
+    font-family:Arial, Helvetica, sans-serif;
+    background:rgba(241, 215, 136, 0.841);
+    border: 4mm ridge rgb(243, 204, 105);
+    padding: 15px;
+    border-radius: 15px;
+    color:#2c2b2b;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+

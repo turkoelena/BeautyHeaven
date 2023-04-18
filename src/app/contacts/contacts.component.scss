@@ -1,0 +1,166 @@
+body {   
+    width: 100%;
+    background: #020202;
+    color: white; 
+    padding-bottom: 15vh;     
+}
+
+.main-image_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25vh;
+         
+}
+
+.main-image_container img {
+    width: 100%;
+    height: 75vh;
+   
+}
+.main-image_container h2 {
+    position: absolute;
+    top: 50%;
+    text-align: center;    
+    font-size: 7rem;
+    font-style: italic;
+    font-weight: 500;
+    color:rgb(239, 238, 236);
+    opacity: 0.7; 
+}
+
+.contacts_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25vh;
+}
+
+.map {
+    width: 50%;
+    margin-right: 10vw;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #CDAA7D;
+}
+.address {
+    padding-top: 3vh;
+}
+
+.address h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #CDAA7D;
+    padding-bottom: 5vh;
+}
+
+.phone img, .location img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5vw;
+}
+
+.phone, .location {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.social-media img {
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+    margin-top: 5vh;
+}
+
+
+
+
+.contact-form_container {
+    width: 60%;
+    margin: 0 auto; 
+    padding-top: 8vh; 
+       
+} 
+
+h5 {
+    font-size: 3rem;
+    padding-left: 12%; 
+    color: #f7ede0;
+    font-style: italic;
+}
+
+.form {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    padding: 35px;
+    border: 2px solid #CDAA7D;
+    border-radius: 10px;  
+    background: url('/assets/images/home/bc-1.jpg'); 
+    background-size: cover; 
+    object-fit: cover;     
+}
+
+
+input, textarea {
+    float: right; 
+    width: 80%;
+    height: 2.7rem; 
+    border: none; 
+    border-radius: 5px;
+    color:rgb(201, 198, 198);
+    margin: 1%; 
+    padding: 0 2%;
+    background: rgba(68, 68, 68, 0.926);
+}
+
+label {   
+    position: relative;
+    font-weight: bolder;
+    top: 18px;
+    right: -25px;
+    color:#CDAA7D ;    
+}
+
+::placeholder {
+    color:#CDAA7D;
+    font-size: 0.9rem;
+}
+
+#name {
+    width: 39%;
+}
+
+#message {
+    min-height: 15vh ;    
+}
+
+.submit-btn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: transparent;
+    background: radial-gradient(circle, rgba(238,208,174,1) 0%, rgb(199, 130, 3) 100%);
+    border-radius: 5px;   
+    margin-top: 2%;
+    padding: 0.7rem;
+    text-align: center;
+    color:#111111;
+    font-size: 1rem;
+    font-weight: 600;
+}
+  
+
+
+
+

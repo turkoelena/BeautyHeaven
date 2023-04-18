@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    background: #020202; 
+    color: #CDAA7D;
+    padding-bottom: 15vh;
+} 
+
+.title {
+    font-size: 2.7rem;
+    font-style: italic;
+    color: rgb(230, 225, 225);
+    text-align: center; 
+    padding: 10vh;
+}
+
+.person_container {
+    text-align: center;
+    margin: 3vw 2.7vw;
+}
+
+
+.team_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 23vw;
+    height: 23vw;
+    border-radius: 50%;
+    border: 7px solid #f8d881; 
+    box-shadow: rgba(242, 242, 213, 0.399) 1px 2px 14px 0px;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.person:hover {
+    transform: scale(1.2);
+    transition-delay: 400ms;
+}
+
+.person img {
+    width: 21.5vw;
+    height: 21.5vw;
+    border-radius: 50%;
+}
+
+.person_container h4 {
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 160%;
+    padding-top: 4vh;
+}
+.person_container p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: rgb(198, 195, 195);    
+}

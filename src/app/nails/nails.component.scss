@@ -1,0 +1,148 @@
+body {   
+    width: 100%;
+    background: #020202;
+    color:rgb(222, 220, 219);
+    padding: 10vh 0px 25vh 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.service_container {
+    width: 80%; 
+    margin: 0 auto;  
+    display: flex;  
+    justify-content: center;
+    padding-bottom: 15vh;    
+}
+
+.note {
+    font-size: 1.3rem;
+    font-style: italic;    
+    padding-bottom: 2vh;
+}
+
+.image_container img {  
+    width: 25vw;   
+    justify-content: center;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    border-radius: 5px;
+}
+
+.service_container h2 {     
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #CDAA7D;
+    padding-bottom: 3vh;
+}
+.service_container h3 {     
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #CDAA7D;
+    padding-bottom: 3vh;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.service-list li {
+    font-size: 1.17rem;
+    color:rgb(170, 167, 163);
+    line-height: 150%;
+    padding-bottom: 2vh;
+    position:relative;    
+}
+
+.service-list span {
+    color: #CDAA7D;
+    font-weight:bolder;
+}
+
+.icon {
+    width:25px;
+    position: absolute;
+    left: -3vw;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 12vh;
+}
+
+.slider_container {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+    
+
+.slider-images img {
+    width: 250px;
+    padding-top: 2vh;
+}
+
+
+.service-price_container {
+    width: 80%; 
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-start;    
+    /* flex-wrap: wrap;  */
+}
+
+.service {
+    width: 50%;   
+    margin-bottom: 10vh;
+    margin-right: 7vw;
+    padding-bottom: 4vh;
+    border-bottom: 4px dotted rgb(150, 149, 149);
+}
+
+.service:nth-child(even) {
+    margin-right: 0px;
+}
+
+
+.service h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    color:#CDAA7D;
+}
+
+.service-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.service-item p, .service-item span {
+    font-size: 1rem;
+    line-height: 200%;    
+}
+
+.services-btn {
+    width: 20vw;
+    font-family:Arial, Helvetica, sans-serif;
+    background:rgba(241, 215, 136, 0.841);
+    border: 4mm ridge rgb(243, 204, 105);
+    padding: 15px;
+    border-radius: 15px;
+    color:#2c2b2b;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+
+

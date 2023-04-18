@@ -1,0 +1,103 @@
+body {   
+    width: 100%;
+    background: #020202;
+    color:rgb(205, 201, 201);
+    padding: 10vh 0px 20vh 0px;   
+    position: relative; 
+}
+
+img {
+    width: 120px;
+    position: absolute;
+    left: 25%;
+    top: 3%; 
+}
+.prices_container {
+    width: 80%;   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    align-items: center;
+}
+
+.title_container {
+    width:60%; 
+    margin-bottom: 6vh; 
+    text-align: center   
+}
+
+.title_container h2 {
+    font-size: 4rem;
+    font-weight: 600;    
+    color: #CDAA7D;
+    font-style: italic;
+    padding-bottom: 7vh;
+    padding-left: 4vw;
+}
+
+.title_container p {
+    font-size: 1.7rem; 
+    line-height: 150%;   
+    padding-bottom: 10vh; 
+    font-style:italic;
+    color:rgb(215, 214, 212);   
+}
+
+.services-btn {
+    width: 20vw;
+    font-family:Arial, Helvetica, sans-serif;
+    background:rgba(241, 215, 136, 0.841);
+    border: 4mm ridge rgb(243, 204, 105);
+    padding: 15px;
+    border-radius: 15px;
+    color:#2c2b2b;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+    
+
+.service-price_container {
+    width: 90%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-wrap: wrap; 
+}
+
+.service {
+    width: 37%;   
+    margin-bottom: 10vh;
+    margin-right: 10vw;
+    padding-bottom: 4vh;
+    border-bottom: 4px dotted rgb(150, 149, 149);
+}
+
+.service:nth-child(even) {
+    margin-right: 0px;
+}
+
+
+.service h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 3vh;
+    text-transform: uppercase;
+    color:#CDAA7D;
+}
+
+.service-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.service-item p, .service-item span {
+    font-size: 1.2rem;
+    line-height: 200%;
+}
+
