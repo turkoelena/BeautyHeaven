@@ -1,16 +1,16 @@
 <body>
     <h3 class="main-title">Наши эксперты красоты</h3>
     <div class="team_container">
-       <!-- <div class="person_container"  *ngFor='person of team'>
+       <div class="person_container" *ngFor='let person of person'>
             <div class="image_container">
                 <div class="person">
-                    <img src="{{person.image}}" alt="">
+                    <img src={{person.image}} alt="">
                 </div>
             </div>
             <h4>{{person.name}}</h4> 
             <p>{{person.profession}}</p>   
-        </div> -->
-        <div class="person_container">
+        </div> 
+       <!--  <div class="person_container">
             <div class="image_container">
                 <div class="person">
                     <img src="./assets/images/team/yulia.jpeg" alt="">
@@ -91,7 +91,7 @@
             <h4>Сергей Иванов</h4> 
             <p>Массажист</p>     
         </div>   
-
+ -->
     </div>
 
     

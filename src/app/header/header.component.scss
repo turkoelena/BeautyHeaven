@@ -5,14 +5,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;    
-    flex-wrap: wrap;
     /* position:sticky;
     top: 0;   */
      z-index: 2;  
 }
 
 .header_menu { 
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     border-bottom: 1px solid #CDAA7D;  
     display: flex;   
@@ -55,26 +54,27 @@ header {
     box-shadow: #CDAA7D .1vw .1vw .4vw 0;
 }
 
-.menu-item { 
+.menu-items { 
     width: 40%;
     display: flex;
     align-items: center; 
     justify-content: space-around; 
+    align-items: center;
     flex-wrap:wrap; 
     cursor: pointer;       
 }
 
-span {
+.item {
     width: 33%;  
     list-style: none;   
     font-weight: 500;
     font-size: calc(.7vw + .7vh + .6vmin);
     line-height: 120%;
     text-align: center; 
-    color: #FFFFFF;    
-} 
+    color: #FFFFFF;  
+}
 
-span:hover {    
+.item:hover {    
     color: #CDAA7D;
     font-weight: 600;
     font-size: calc(.7vw + .7vh + .6vmin);;
@@ -82,6 +82,8 @@ span:hover {
     line-height: 130%;
     text-align: center;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 

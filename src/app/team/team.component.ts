@@ -10,25 +10,28 @@ import { ActivatedRoute } from '@angular/router';
 
 
 export class TeamComponent implements OnInit  {
-  public person: any;
-  public team: any[] = [];
-  private teamSubscribe: any;  
+   public person: any;
+   private personSubscribe: any;  
 
-  constructor(private databaseService: DatabaseService) {}
+  constructor(
+    private databaseService: DatabaseService,
+    private route: ActivatedRoute,) {}
 
   ngOnInit() {
     this.getPerson();
   }
+  
 
   ngOnDestroy() {
-    this.teamSubscribe.unsubscribe();
+     this.personSubscribe.unsubscribe();
   }
-  
+
   getPerson() {
-    this.teamSubscribe = this.databaseService.getPerson().subscribe((team: any) => {
-      this.team = team;
+    this.personSubscribe = this.databaseService.getPerson().subscribe((person: any) => {
+      this.person = person;
     })
   }
+ 
  
 }
 
