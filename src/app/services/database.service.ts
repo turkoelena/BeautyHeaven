@@ -21,4 +21,7 @@ export class DatabaseService {
   getProducts(): Observable<any[]>  {
     return this.db.collection('products').valueChanges({idField: 'id'});
   }
+  getPerson(): Observable<any[]>  {
+    return this.db.collection('team').valueChanges({idField: 'id'});
+  }
 }

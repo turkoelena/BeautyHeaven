@@ -24,20 +24,32 @@ body {
     padding-bottom: 2vh;
 }
 
-.image_container img {
-    width: 450px; 
-    object-fit: cover; 
-    justify-content: center;
+.image_container {
+    width: 40%;
     margin-right: 7vw;
     margin-top: 2vh;
+}
+
+.service-description {
+    width: 60%;
+}
+
+.image_container img {
+    width: 100%; 
+    object-fit: cover; 
+    justify-content: center;    
     border-radius: 7px;
 }
 
+.image-men_container {
+    width: 35%;
+}
+
 .image-men_container img {
-    width: 450px; 
+    width: 100%; 
     object-fit: cover; 
     justify-content: center;
-    margin-left: 7vw;
+    margin-left: 3vw;
     margin-top: 5vh;
     border-radius: 7px;
 }

@@ -22,8 +22,6 @@ import { HaircutComponent } from './haircut/haircut.component';
 import { HaircolorComponent } from './haircolor/haircolor.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { BrowsComponent } from './brows/brows.component';
-import { NgCarouselDemoComponent } from './ng-carousel-demo/ng-carousel-demo.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { MassageComponent } from './massage/massage.component';
 
 
@@ -43,7 +41,6 @@ import { MassageComponent } from './massage/massage.component';
     HaircolorComponent,
     MakeupComponent,
     BrowsComponent,
-    NgCarouselDemoComponent,
     MassageComponent,
      
   ],
@@ -52,11 +49,9 @@ import { MassageComponent } from './massage/massage.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule,
-    SlickCarouselModule,
-    
-    
+    AngularFirestoreModule,    
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

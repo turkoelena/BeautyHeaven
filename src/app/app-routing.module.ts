@@ -12,7 +12,7 @@ import { HaircolorComponent } from './haircolor/haircolor.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { BrowsComponent } from './brows/brows.component';
 import { MassageComponent } from './massage/massage.component';
-import { NgCarouselDemoComponent } from './ng-carousel-demo/ng-carousel-demo.component';
+
 
 
 
@@ -29,8 +29,7 @@ const routes: Routes = [
   { path: 'makeup', component: MakeupComponent },
   { path: 'brows', component: BrowsComponent },
   { path: 'massage', component: MassageComponent },
-  { path: 'ng-carousel-demo', component: NgCarouselDemoComponent }
-
+  
 ];
 
 @NgModule({

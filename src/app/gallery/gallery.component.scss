@@ -33,6 +33,8 @@ h2  {
 .gallery_images img {
     width: 350px; 
     height: 415px;  
+    object-fit: cover;
+    object-position: middle;
     position: relative;
     right: 20px;
     top: 20px;

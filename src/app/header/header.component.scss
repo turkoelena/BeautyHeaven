@@ -6,9 +6,9 @@ header {
     align-items: center;
     justify-content: center;    
     flex-wrap: wrap;
-    /* position:sticky;  */
-    top: 0;
-    z-index: 2;  
+    /* position:sticky;
+    top: 0;   */
+     z-index: 2;  
 }
 
 .header_menu { 
@@ -20,7 +20,6 @@ header {
     align-items: center; 
     justify-content: center; 
 }
-
 
 .btn-group {
     display:none;
@@ -36,25 +35,24 @@ header {
     height: 50px; 
 }
 
-
-
 .logo {
-    width: 120px;
+    width: 8vw;
     border-radius:50%;
     position: relative;
-    bottom: 25px;    
-    box-shadow: #CDAA7D 2px 2px 4px 0px;
+    bottom: 3.5vh;    
+    box-shadow: #CDAA7D .1vw .1vw .2vw 0;
     margin: 0 2vw;
 }
+
 .insta {
     width: 2vw;
     height: 2vw;
-    border-radius: 7px;
+    border-radius: .5vw;
 }
 
 .logo:hover, .insta:hover {
     transform: scale(1.2);
-    box-shadow: #CDAA7D 2px 2px 5px 1px;
+    box-shadow: #CDAA7D .1vw .1vw .4vw 0;
 }
 
 .menu-item { 
@@ -62,14 +60,15 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-around; 
-    flex-wrap:wrap;        
+    flex-wrap:wrap; 
+    cursor: pointer;       
 }
 
 span {
     width: 33%;  
     list-style: none;   
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: calc(.7vw + .7vh + .6vmin);
     line-height: 120%;
     text-align: center; 
     color: #FFFFFF;    
@@ -78,7 +77,7 @@ span {
 span:hover {    
     color: #CDAA7D;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: calc(.7vw + .7vh + .6vmin);;
     text-decoration: underline;
     line-height: 130%;
     text-align: center;

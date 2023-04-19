@@ -5,6 +5,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
     z-index: 2;
      
@@ -23,28 +24,24 @@ footer {
 }
 
 .contacts {
-    width: 35%;
-    display: flex;    
+    width: 37%;
+    display: flex;
+    justify-content: space-between;    
 }
 
 .contacts h2 {
     color: #CDAA7D;
     padding-bottom: 2vh;
-    font-size: 1.2rem;
+    font-size: calc(.9vw + 1vh + 1vmin);
 }
 
 .contacts ul {
     list-style-type: none;
-    padding-left: 5vw;
 }
-
-.contacts ul:first-child {
-    padding-left: 0px;
-}
-
 
 .contacts li {
     line-height: 180%;
+    font-size: calc(.7vw + .7vh + .1vmin);
 }
 
 .logo_container {
@@ -63,16 +60,16 @@ footer {
 }
 
 .logo {
-    width: 100px;
+    width: 7vw;
     border-radius:50%;
     position: relative;
-    bottom: 25px;    
-    box-shadow: #CDAA7D 2px 2px 4px 0px;
+    bottom: 3vh;    
+    box-shadow: #CDAA7D .1vw .1vw .4vw 0;
 }
 
 .logo:hover, .social-media img:hover {
     transform: scale(1.2);
-    box-shadow: #CDAA7D 2px 2px 5px 1px;
+    box-shadow: #CDAA7D .2vw .2vw .5vw 0;
 }
 
 .quick-links_container {
@@ -93,7 +90,7 @@ footer {
 
 .quick-links_container li {
     padding-bottom: 3vh;
-    font-size: 1rem;
+    font-size: calc(.6vw + .6vh + .6vmin);
     font-weight: 400;    
 }
 
