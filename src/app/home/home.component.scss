@@ -173,13 +173,14 @@ source {
     height: 22vw;
     border-radius: .5vw;
     box-shadow: 0 .1vw .3vw .1vw rgb(117, 117, 117); 
+    object-fit: cover;
     margin: 3vh 1vw;  
     margin-bottom: 7vmin; 
 }
 
 .gallery_images img:hover {
     
-transform:scale(1.2);
+    transform:scale(1.2);
   
 }
 

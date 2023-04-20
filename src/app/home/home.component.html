@@ -19,7 +19,7 @@
     </div>
  -->
     <div class="about">
-        <img src="./assets/images/home/quotes.png" alt="">
+        <img src="./assets/images/home/quotes.png" alt="img">
         <p>Красота является уникальным выражением каждого человека. Она дарит позитивные эмоции и меняет настроение к лучшему. Особенно если стоимость полученной красоты доступная и приемлемая. Стать более привлекательной стало еще проще. Лучший салон красоты, находящийся в Минске, открывает свои двери каждому, кто желает на некоторое время погрузиться в мир расслабленности, ухода и внешней привлекательности.</p>
         <p>Наш салон красоты, недорого посетить который может каждый желающий, открывает двери всем гостям, стремящимся, как и мы к красоте. От нас уходят только обновленными и окрыленными. Осуществляет салон красоты наращивание и ламинирование ресниц, стрижки разной сложности, окрашивание волос и бровей.</p>
     </div>
@@ -32,21 +32,20 @@
 
      <!-- Галерея   --> 
 
-     <div class="gallery">
+     <div class="gallery" >
         <h2 class = "title">Наши работы</h2>
 
         <ul>
-            <li >Показать все</li>
-            <li>Парикмахерские услуги</li>
-            <li>Маникюр</li>
-            <li>Макияж</li>            
+            <li *ngFor='let category of categories' 
+            [routerLink] = '["products"]'
+            [queryParams] = "{category: category.id}">{{category.name}}</li>                     
         </ul>        
    
   
         
     <div class="gallery_images">
-        <img src="./assets/images/home/cut-1.jpg" alt=""> 
-        <img src="./assets/images/home/color-1.jpg" alt=""> 
+        <img src={{img.image}} alt="img" *ngFor='let img of images'>  
+        <!-- <img src="./assets/images/home/color-1.jpg" alt=""> 
         <img src="./assets/images/home/nails-1.jpg" alt="">
         <img src="./assets/images/home/makeup-2.jpg" alt="">
         <img src="./assets/images/home/cut-2.jpg" alt="">
@@ -56,11 +55,10 @@
         <img src="./assets/images/home/color-2.jpg" alt="">
         <img src="./assets/images/home/nails-3.jpg" alt="">
         <img src="./assets/images/home/makeup-3.jpg" alt="">
-        <img src="./assets/images/home/cut-4.jpg" alt="">
+        <img src="./assets/images/home/cut-4.jpg" alt=""> -->
     </div>
 
-</div>
-            
+</div>     
             
 
     
