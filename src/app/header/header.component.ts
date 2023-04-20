@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent  { 
-  public isCollapsed = true;   
+  public isCollapsed = true;  
+  
 }

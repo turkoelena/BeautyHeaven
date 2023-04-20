@@ -15,11 +15,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.route.url.subscribe((url)=> {
-      if (url[0].path === '') {
-        const header: any = document.querySelector('app-header');
+      const header: any = document.querySelector('app-header');
         header.style.position= 'sticky'; 
-        header.style.top = '0';  
-      }
+        header.style.top = '0';
     });
   }
 

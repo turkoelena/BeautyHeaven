@@ -1,15 +1,15 @@
 <header> 
     <div class="header_menu">
         <div class="menu-items">
-            <img  class="insta" src="./assets/images/header/instagram.png" alt="img">
-            <span class="item"  [routerLink]='["/"]'>Главная</span>              
-            <span class = "item" [routerLink]='["/products"]'>Наши услуги</span>  
+            <img  class="insta" src="./assets/images/header/instagram.png">
+            <span class="item"  [routerLink]='["/"]' routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная</span>              
+            <span class = "item" [routerLink]='["/products"]' routerLinkActive="active">Наши услуги</span>  
         </div>
         <img  class = "logo" src="./assets/images/header/logo.jpg" alt="img" [routerLink]='["/"]'>
         <div class="menu-items">                         
-            <span class = "item" [routerLink]='["/team"]'>Мастера</span>              
-            <span class = "item" [routerLink]='["/prices"]'>Цены</span>              
-            <span class = "item" [routerLink]='["/contacts"]'>Контакты</span>              
+            <span class = "item" [routerLink]='["/team"]' routerLinkActive="active">Мастера</span>              
+            <span class = "item" [routerLink]='["/prices"]' routerLinkActive="active">Цены</span>              
+            <span class = "item" [routerLink]='["/contacts"]' routerLinkActive="active">Контакты</span>              
         </div>
     </div>
  
