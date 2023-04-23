@@ -70,7 +70,7 @@ body {
 
 
 .service-list {
-    list-style: none;    
+    list-style: none;       
 }
 
 .service-list li {
@@ -79,7 +79,7 @@ body {
     line-height: 140%;
     padding-bottom: 2vh;
     position:relative;
-    padding-left: 2vw;    
+    padding-left: 2vw;
 }
 
 .service-list span {
@@ -113,11 +113,11 @@ body {
 
 .carousel-indicators {
     position: relative;
-    top: 91vh;
+    top:43vw;
 }
 
 .carousel-item img {
-    height: 85vh;
+    height: 40vw;
     object-fit: cover;
     object-position: center;
     border-radius: 7px;
