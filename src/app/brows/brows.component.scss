@@ -161,16 +161,24 @@ body {
 
 .services-btn {
     width: 20vw;
+    height: 5vw;
     font-family:Arial, Helvetica, sans-serif;
     background:rgba(241, 215, 136, 0.841);
-    border: 4mm ridge rgb(243, 204, 105);
-    padding: 15px;
+    border: 1vw ridge rgb(243, 204, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 15px;
     color:#2c2b2b;
-    font-size: 0.8rem;
+    font-size: calc(.5vw + .5vh + .5vmin);
     font-weight: 800;
-    text-align: center;
     text-transform: uppercase;
     margin-top: 5vh;
     cursor: pointer;
+}
+
+.services-btn:active {
+    width: 19vw;
+    height: 4.7vw;
+    font-size: calc(.47vw + .47vh + .47vmin);
 }
