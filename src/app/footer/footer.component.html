@@ -1,42 +1,46 @@
 <footer>
-    <div class="main-footer_container">
-        <div class="contacts">
-            <ul>
-                <h2>Контакты</h2>
-                <li>+375(29)00-00-00</li>
-                <li>+375(44)00-00-00</li>
-                <li>ул. Братьев Райт, 25</li>
-            </ul>
+  <div class="main-footer_container">
+    <div class="contacts">
+      <ul>
+        <h2>Контакты</h2>
+        <li>+375 (29) 00-00-00</li>
+        <li>+375 (44) 00-00-00</li>
+        <li>ул. Братьев Райт, 25</li>
+      </ul>
 
-            <ul>
-                <h2>Режим работы</h2>
-                <li>С 10: 00 до 21:00 (Пн - Пт)</li>
-                <li>С 10: 00 до 20:00 (Сб - Вс)</li>            
-            </ul>
-        </div>
-
-        <div class="logo_container">
-            <img  class="logo" src="./assets/images/header/logo.jpg" alt="img" [routerLink]='["/"]'>
-            
-            <div class="social-media">
-                <img src="./assets/images/footer/fb.jpg" alt="img" >
-                <img src="./assets/images/footer/insta.jpg" alt="img">
-                <img src="./assets/images/footer/viber.jpg" alt="img">
-            </div>
-        </div>
-
-        <div class="quick-links_container">
-            <ul>            
-                <li class="category"  [routerLink]='["/"]'>ГЛАВНАЯ</li>              
-                <li class="category" [routerLink]='["/products"]'>УСЛУГИ</li>
-                <li class="category" [routerLink]='["/gallery"]'>ФОТОГАЛЕРЯ</li>
-            </ul>
-            <ul>   
-                <li class="category" [routerLink]='["/team"]'>МАСТЕРА</li>              
-                <li class="category" [routerLink]='["/prices"]'>ЦЕНЫ</li>              
-                <li class="category" [routerLink]='["/contacts"]'>КОНТАКТЫ</li>              
-            </ul>
-            
-        </div>
+      <ul>
+        <h2>Режим работы</h2>
+        <li>С 10: 00 до 21:00 (Пн - Пт)</li>
+        <li>С 10: 00 до 20:00 (Сб - Вс)</li>
+      </ul>
     </div>
+
+    <div class="logo_container">
+      <img
+        class="logo"
+        src="./assets/images/header/logo.jpg"
+        alt="img"
+        [routerLink]="['/']"
+      />
+
+      <div class="social-media">
+        <img src="./assets/images/footer/fb.jpg" alt="img" />
+        <img src="./assets/images/footer/insta.jpg" alt="img" />
+        <img src="./assets/images/footer/viber.jpg" alt="img" />
+      </div>
+    </div>
+
+    <div class="quick-links_container">
+      <ul>
+        <li class="category" [routerLink]="['/']">ГЛАВНАЯ</li>
+        <li class="category" [routerLink]="['/products']">УСЛУГИ</li>
+        <li class="category" [routerLink]="['/gallery']">ФОТОГАЛЕРЯ</li>
+      </ul>
+      <ul>
+        <li class="category" [routerLink]="['/team']">МАСТЕРА</li>
+        <li class="category" [routerLink]="['/prices']">ЦЕНЫ</li>
+        <li class="category" [routerLink]="['/contacts']">КОНТАКТЫ</li>
+      </ul>
+    </div>
+  </div>
 </footer>

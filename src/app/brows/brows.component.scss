@@ -1,184 +1,190 @@
-body {   
-    width: 100%;
-    background: #020202;
-    padding: 5vh;
-    color: #CDAA7D;
-    color:rgb(222, 220, 219);
-    padding: 10vh 0px 25vh 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+body {
+  width: 100%;
+  background: #020202;
+  padding: 5vh;
+  color: #cdaa7d;
+  color: rgb(222, 220, 219);
+  padding: 10vh 0px 25vh 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service_container {
-    width: 85%; 
-    margin: 0 auto;  
-    display: flex;  
-    justify-content: center;
-    padding-bottom: 15vh;    
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15vh;
 }
 
 .note {
-    font-size: 1.3rem;
-    font-style: italic;    
-    padding-bottom: 2vh;
+  font-size: calc(0.7vw + 0.7vh + 0.7vmin);
+  font-style: italic;
+  padding-bottom: 2vh;
 }
 
-.image_container img {
-    width: 29vw; 
-    object-fit: cover; 
-    justify-content: center;
-    margin-right: 7vw;
-    margin-top: 2vh;
-    border-radius: 7px;
+.image-brows_container img {
+  width: 29vw;
+  object-fit: cover;
+  justify-content: center;
+  margin-right: 7vw;
+  margin-top: 2vh;
+  border-radius: 7px;
 }
 
 .image-lashes_container img {
-    width: 450px; 
-    object-fit: cover; 
-    justify-content: center;
-    margin-left: 7vw;
-    margin-top: 3vh;
-    border-radius: 7px;
+  width: 29vw;
+  object-fit: cover;
+  justify-content: center;
+  margin-left: 7vw;
+  margin-top: 3vh;
+  border-radius: 7px;
 }
-.service_container h2 {     
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 500;
-    color: #CDAA7D;
-    padding-bottom: 3vh;
+
+.service_container h2 {
+  font-size: calc(1.9vw + 1vh + 1vmin);
+  font-style: italic;
+  font-weight: 500;
+  color: #cdaa7d;
+  padding-bottom: 3vh;
 }
-.service_container h3 {     
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 500;
-    color: #CDAA7D;
-    padding-bottom: 3vh;
+
+.service_container h3 {
+  font-size: calc(1.2vw + 1vh + 1vmin);
+  font-style: italic;
+  font-weight: 500;
+  color: #cdaa7d;
+  padding-bottom: 3vh;
 }
 
 .service-list {
-    list-style: none;    
+  list-style: none;
 }
 
 .service-list li {
-    font-size: 1.16rem;
-    color:rgb(170, 167, 163);
-    line-height: 140%;
-    padding-bottom: 2vh;
-    position:relative;
-    padding-left: 2vw;    
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  color: rgb(204, 203, 201);
+  line-height: 140%;
+  padding-bottom: 2vh;
+  position: relative;
+  padding-left: 2vw;
 }
 
 .service-list span {
-    color: #CDAA7D;
-    font-weight:bolder;
+  color: #cdaa7d;
+  font-weight: bolder;
 }
 
 .icon {
-    width:25px;
-    position: absolute;
-    left: -1vw;
+  width: 1.5vw;
+  position: absolute;
+  left: -1vw;
 }
-
 
 .title {
-    font-size: 3rem;
-    text-align: center;
-    font-style: italic;
-    padding-bottom: 7vh;
+  font-size: calc(1.7vw + 1.7vh + 1vmin);
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 5vw;
 }
 
+/* Slider */
+
 .slider_container {
-    width: 43%;
-    height: 80vh;
-    margin-bottom: 15vh;
-} 
+  width: 43%;
+  height: 33vw;
+  margin-bottom: 20vh;
+}
 
 .carousel-indicators {
-    position: relative;
-    top: 68vh;
+  position: relative;
+  top: 32.5vw;
 }
 
 .carousel-item img {
-    width: 70%;  
-    height: 60vh;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 7px;
-}  
+  width: 70%;
+  height: 29vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 7px;
+}
 
 .carousel-control-prev-icon {
-    position: relative;
-    left: -7vw;
+  position: relative;
+  left: -7vw;
 }
 
 .carousel-control-next {
-    right: -7vw;
+  right: -7vw;
 }
 
+/* Prices */
 
 .service-price_container {
-    width: 80%; 
-    margin: 0 auto;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: flex-start;    
-    /* flex-wrap: wrap;  */
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .service {
-    width: 50%;   
-    margin-bottom: 10vh;
-    margin-right: 6vw;
-    padding-bottom: 4vh;
-    border-bottom: 4px dotted rgb(150, 149, 149);
+  width: 45%;
+  margin-bottom: 10vh;
+  margin-right: 6vw;
+  padding-bottom: 4vh;
+  border-bottom: 4px dotted rgb(225, 221, 221);
 }
 
 .service:nth-child(even) {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
-
 .service h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding-bottom: 3vh;
-    text-transform: uppercase;
-    color:#CDAA7D;
+  font-size: calc(0.8vw + 0.8vh + 1vmin);
+  font-weight: 500;
+  padding-bottom: 3vh;
+  text-transform: uppercase;
+  color: #cdaa7d;
 }
 
 .service-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.service-item p, .service-item span {
-    font-size: 1.12rem;
-    line-height: 170%;    
+.service-item p,
+.service-item span {
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  line-height: 170%;
 }
+
+/* Button */
 
 .services-btn {
-    width: 20vw;
-    height: 5vw;
-    font-family:Arial, Helvetica, sans-serif;
-    background:rgba(241, 215, 136, 0.841);
-    border: 1vw ridge rgb(243, 204, 105);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    color:#2c2b2b;
-    font-size: calc(.5vw + .5vh + .5vmin);
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 5vh;
-    cursor: pointer;
+  width: 20vw;
+  height: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(241, 215, 136, 0.841);
+  border: 1vw ridge rgb(243, 204, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #2c2b2b;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  cursor: pointer;
 }
 
 .services-btn:active {
-    width: 19vw;
-    height: 4.7vw;
-    font-size: calc(.47vw + .47vh + .47vmin);
+  width: 19vw;
+  height: 4.7vw;
+  font-size: calc(0.47vw + 0.47vh + 0.47vmin);
 }

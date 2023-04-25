@@ -1,194 +1,196 @@
-body {   
-    width: 100%;
-    background: #020202;
-    padding: 5vh;
-    color: #CDAA7D;
-    color:rgb(222, 220, 219);
-    padding: 10vh 0px 25vh 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+body {
+  width: 100%;
+  background: #020202;
+  padding: 5vh;
+  color: #cdaa7d;
+  color: rgb(222, 220, 219);
+  padding: 10vh 0px 25vh 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service_container {
-    width: 80%; 
-    margin: 0 auto;  
-    display: flex;  
-    justify-content: center;
-    padding-bottom: 20vh;    
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20vh;
 }
 
 .service-description {
-    width: 55%;
+  width: 55%;
 }
 
 .image_container {
-    width: 45%;
+  width: 45%;
 }
 
-.image_container img {  
-    width: 90%; 
-    object-fit:cover;
-    margin-right: 3vw;
-    margin-top: 3vw;
-    border-radius: 7px;
+.image_container img {
+  width: 90%;
+  object-fit: cover;
+  margin-right: 3vw;
+  margin-top: 3vw;
+  border-radius: 7px;
 }
 
-.service_container h2 {     
-    font-size: calc(1.9vw + 1vh + 1vmin);
-    font-style: italic;
-    font-weight: 500;    
-    color: #CDAA7D;
-    padding-bottom: 1.5vw;
+.service_container h2 {
+  font-size: calc(1.9vw + 1vh + 1vmin);
+  font-style: italic;
+  font-weight: 500;
+  color: #cdaa7d;
+  padding-bottom: 1.5vw;
 }
 
 .note {
-    font-size: calc(.8vw + .8vh + .8vmin);
-    font-style: italic;    
-    padding-bottom: 2.5vh;
+  font-size: calc(0.8vw + 0.8vh + 0.8vmin);
+  font-style: italic;
+  padding-bottom: 2.5vh;
 }
 
-.service_container h3 {     
-    font-size: calc(1.2vw + 1vh + 1vmin);
-    font-style: italic;
-    font-weight: 500;
-    color: #CDAA7D;
-    padding-bottom: 1vw;
+.service_container h3 {
+  font-size: calc(1.2vw + 1vh + 1vmin);
+  font-style: italic;
+  font-weight: 500;
+  color: #cdaa7d;
+  padding-bottom: 1vw;
 }
 
-.service-list {   
-    list-style: none; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+.service-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .service-list h4 {
-    font-size: calc(.7vw + .7vh + 1vmin);
-    font-weight: 300;
-    line-height: 60%;
-    color:rgb(170, 167, 163);
-    padding-left: 4vw;
-    position: relative;    
+  font-size: calc(0.7vw + 0.7vh + 1vmin);
+  font-weight: 300;
+  line-height: 60%;
+  color: rgb(170, 167, 163);
+  padding-left: 4vw;
+  position: relative;
 }
 
 .service-list span {
-    color: #CDAA7D;
-    font-weight: bolder;
+  color: #cdaa7d;
+  font-weight: bolder;
 }
 
 .icon {
-    width: 1.5vw;
-    position: relative;
-    left: 1vw;
-    top: 1.2vw;
+  width: 1.5vw;
+  position: relative;
+  left: 1vw;
+  top: 1.2vw;
 }
 
-
-.txt_container  {
-    width: 70%;
-    margin: 0 auto; 
-    padding-bottom: 15vh;
+.txt_container {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 15vh;
 }
 
-.txt_container h3,.service-options h3 {
-    font-size: calc(1.4vw + 1.4vh + 1.4vmin);
-    font-weight: 400;
-    color:#CDAA7D;
-    padding-bottom: 4vh; 
-    text-align: center;
+.txt_container h3,
+.service-options h3 {
+  font-size: calc(1.4vw + 1.4vh + 1.4vmin);
+  font-weight: 400;
+  color: #cdaa7d;
+  padding-bottom: 4vh;
+  text-align: center;
 }
 
-.txt_container p, .service-options p {
-    font-size: calc(.6vw + .6vh + 1vmin);
-    line-height: 140%;
-    text-align: center; 
-    padding-bottom: 1.5vh;
+.txt_container p,
+.service-options p {
+  font-size: calc(0.6vw + 0.6vh + 1vmin);
+  line-height: 140%;
+  text-align: center;
+  padding-bottom: 1.5vh;
 }
 
 .service-options {
-    width: 70%;
-    margin: 0 auto;  
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding-bottom: 20vh;
-} 
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20vh;
+}
 
 .service-options img {
-    width: 60%;
-    margin-top: 6vh;
+  width: 60%;
+  margin-top: 6vh;
 }
 
 .title {
-    font-size: calc(1.9vw + 1.9vh + 1.9vmin);
-    text-align: center;
-    font-style: italic;
-    padding-bottom: 12vh;
-} 
+  font-size: calc(1.9vw + 1.9vh + 1.9vmin);
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 12vh;
+}
 
 /* Цены */
 
 .service-price_container {
-    width: 75%; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;    
+  width: 75%;
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .service {
-    width: 45%;   
-    margin-bottom: 10vh;
-    margin-right: 7vw; 
-    padding-bottom: 4vh;
-    border-bottom: 4px dotted rgb(150, 149, 149);
+  width: 45%;
+  margin-bottom: 10vh;
+  margin-right: 7vw;
+  padding-bottom: 4vh;
+  border-bottom: 4px dotted rgb(150, 149, 149);
 }
 
 .service:nth-child(2) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .service h3 {
-    font-size: calc(.8vw + .8vh + 1vmin);    
-    font-weight: 500;
-    padding-bottom: 2vw;
-    text-transform: uppercase;
-    color:#CDAA7D;
+  font-size: calc(0.8vw + 0.8vh + 1vmin);
+  font-weight: 500;
+  padding-bottom: 2vw;
+  text-transform: uppercase;
+  color: #cdaa7d;
 }
 
 .service-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.service-item p, .service-item span {
-    font-size: calc(.6vw + .6vh + 1vmin);
-    line-height: 160%;    
+.service-item p,
+.service-item span {
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  line-height: 160%;
 }
 
 .services-btn {
-    width: 20vw;
-    height: 5vw;
-    font-family:Arial, Helvetica, sans-serif;
-    background:rgba(241, 215, 136, 0.841);
-    border: 1vw ridge rgb(243, 204, 105);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    color:#2c2b2b;
-    font-size: calc(.5vw + .5vh + .5vmin);
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 5vh;
-    cursor: pointer;
+  width: 20vw;
+  height: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(241, 215, 136, 0.841);
+  border: 1vw ridge rgb(243, 204, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #2c2b2b;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  cursor: pointer;
 }
 
 .services-btn:active {
-    width: 19vw;
-    height: 4.7vw;
-    font-size: calc(.47vw + .47vh + .47vmin);
+  width: 19vw;
+  height: 4.7vw;
+  font-size: calc(0.47vw + 0.47vh + 0.47vmin);
 }
-

@@ -1,28 +1,101 @@
-<header> 
-    <div class="header_menu">
-        <div class="menu-items">
-            <img  class="insta" src="./assets/images/header/instagram.png">
-            <span class="item"  [routerLink]='["/"]' routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Главная</span>              
-            <span class = "item" [routerLink]='["/products"]' routerLinkActive="active">Наши услуги</span>  
-        </div>
-        <img  class = "logo" src="./assets/images/header/logo.jpg" alt="img" [routerLink]='["/"]'>
-        <div class="menu-items">                         
-            <span class = "item" [routerLink]='["/team"]' routerLinkActive="active">Мастера</span>              
-            <span class = "item" [routerLink]='["/prices"]' routerLinkActive="active">Цены</span>              
-            <span class = "item" [routerLink]='["/contacts"]' routerLinkActive="active">Контакты</span>              
-        </div>
+<header>
+  <div class="header_menu">
+    <div class="menu-items">
+      <img class="insta" src="./assets/images/header/instagram.png" />
+      <span
+        class="item"
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Главная</span
+      >
+      <span class="item" [routerLink]="['/products']" routerLinkActive="active"
+        >Наши услуги</span
+      >
     </div>
- 
+    <img
+      class="logo"
+      src="./assets/images/header/logo.jpg"
+      alt="img"
+      [routerLink]="['/']"
+    />
+    <div class="menu-items">
+      <span class="item" [routerLink]="['/team']" routerLinkActive="active"
+        >Мастера</span
+      >
+      <span class="item" [routerLink]="['/prices']" routerLinkActive="active"
+        >Цены</span
+      >
+      <span class="item" [routerLink]="['/contacts']" routerLinkActive="active"
+        >Контакты</span
+      >
+    </div>
+  </div>
 
- <!-- <div class="btn-group dropend">
-    <img  class = "insta" src="./assets/images/header/menu-icon.png" alt="img" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
- 
-    <ul class="dropdown-menu">
-      <li><span class = "category"  [routerLink]='["/"]'>Главная</span></li>
-      <li><span class = "category" [routerLink]='["/products"]'>Наши услуги</span>
-      <li><a class="dropdown-item" href="#">Menu item</a></li>
+  <div class="header_mobile">
+    <ul class="contacts">
+      <li>+375(29)00-00-00</li>
+      <li>+375(44)00-00-00</li>
+      <li>ул. Братьев Райт, 25</li>
     </ul>
-  </div>      
- -->
-           
+    <div class="social-media">
+      <img src="./assets/images/footer/fb.jpg" alt="img" />
+      <img src="./assets/images/footer/insta.jpg" alt="img" />
+      <img src="./assets/images/footer/viber.jpg" alt="img" />
+    </div>
+
+    <div class="btn-group">
+      <img
+        class="nav"
+        src="./assets/images/header/menu-icon.png"
+        alt="img"
+        type="button"
+        class="btn btn-secondary dropdown-toggle"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      />
+      <ul class="dropdown-menu">
+        <li>
+          <span
+            class="nav-item"
+            [routerLink]="['/']"
+            routerLinkActive="active-mobile"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Главная</span>
+        </li>
+
+        <li>
+          <span
+            class="nav-item"
+            [routerLink]="['/products']"
+            routerLinkActive="active-mobile"
+            >Наши услуги</span>            
+        </li>
+
+        <li>
+          <span
+            class="nav-item"
+            [routerLink]="['/team']"
+            routerLinkActive="active-mobile"
+            >Мастера</span>
+        </li>
+
+        <li>
+          <span
+            class="nav-item"
+            [routerLink]="['/contacts']"
+            routerLinkActive="active-mobile"
+            >Контакты</span>
+        </li>
+
+        <li>
+          <span
+            class="nav-item"
+            [routerLink]="['/gallery']"
+            routerLinkActive="active-mobile"
+            >Фотогалерея</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>

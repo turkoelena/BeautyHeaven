@@ -1,113 +1,111 @@
-body {   
-    width: 100%;
-    background: #020202;
-    color:rgb(205, 201, 201);
-    padding: 10vh 0px 20vh 0px;   
-    position: relative; 
+body {
+  color: rgb(205, 201, 201);
+  padding: 10vh 0px 20vh 0px;
+  position: relative;
 }
 
 .icon {
-    width: 8vw;
-    position: absolute;
-    left: 23%;
-    top: 3%; 
+  width: 8vw;
+  position: absolute;
+  left: 23%;
+  top: 3%;
 }
 
 .prices_container {
-    width: 80%;   
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;    
-    align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .title_container {
-    width:70%; 
-    margin-bottom: 5vw; 
-    text-align: center   
+  width: 70%;
+  margin-bottom: 5vw;
+  text-align: center;
 }
 
 .title_container h2 {
-    font-size: calc(3vw + 2vh + 1vmin);
-    font-weight: 600;    
-    color: #CDAA7D;
-    font-style: italic;
-    padding-bottom: 3vw;
-    padding-left: 2vw;
+  font-size: calc(3vw + 2vh + 1vmin);
+  font-weight: 600;
+  color: #cdaa7d;
+  font-style: italic;
+  padding-bottom: 3vw;
+  padding-left: 2vw;
 }
 
 .title_container p {
-    font-size: calc(1.2vw + 1vh + 1vmin);
-    line-height: 150%;   
-    padding-bottom: 4vw; 
-    font-style:italic;
-    color:rgb(215, 214, 212);   
+  font-size: calc(1.2vw + 1vh + 1vmin);
+  line-height: 150%;
+  padding-bottom: 4vw;
+  font-style: italic;
+  color: rgb(215, 214, 212);
 }
 
-/* Цены */
+/* Prices */
 
 .service-price_container {
-    width: 90%;   
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;    
-    flex-wrap: wrap; 
+  width: 95%;
+  font-family: "Bitter", serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .service {
-    width: 40%;   
-    margin-bottom: 5vw;
-    margin-right: 10vw;
-    padding-bottom: 1vw;
-    border-bottom: 4px dotted rgb(150, 149, 149);
+  width: 40%;
+  margin-bottom: 5vw;
+  margin-right: 10vw;
+  padding-bottom: 1vw;
+  border-bottom: 4px dotted rgb(150, 149, 149);
 }
 
 .service:nth-child(even) {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .service h3 {
-    font-size: calc(.9vw + .9vh + .9vmin);
-    font-weight: 500;
-    padding-bottom: 3vh;
-    text-transform: uppercase;
-    color:#CDAA7D;
+  font-size: calc(0.9vw + 0.9vh + 0.9vmin);
+  font-weight: 500;
+  padding-bottom: 3vh;
+  text-transform: uppercase;
+  color: #cdaa7d;
 }
 
 .service-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.service-item p, .service-item span {
-    font-size: calc(.7vw + .7vh + .7vmin);
-    line-height: 150%;
+.service-item p,
+.service-item span {
+  font-size: calc(0.6vw + 0.6vh + 1vmin);
+  line-height: 150%;
 }
 
 .services-btn {
-    width: 20vw;
-    height: 5vw;
-    font-family:Arial, Helvetica, sans-serif;
-    background:rgba(241, 215, 136, 0.841);
-    border: 1vw ridge rgb(243, 204, 105);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    color:#2c2b2b;
-    font-size: calc(.5vw + .5vh + .5vmin);
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-top: 5vh;
-    cursor: pointer;
+  width: 20vw;
+  height: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(241, 215, 136, 0.841);
+  border: 1vw ridge rgb(243, 204, 105);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: #2c2b2b;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  cursor: pointer;
 }
 
 .services-btn:active {
-    width: 19vw;
-    height: 4.7vw;
-    font-size: calc(.47vw + .47vh + .47vmin);
+  width: 19vw;
+  height: 4.7vw;
+  font-size: calc(0.47vw + 0.47vh + 0.47vmin);
 }
-    
-
