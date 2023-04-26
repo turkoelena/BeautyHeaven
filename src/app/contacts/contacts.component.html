@@ -40,16 +40,30 @@
     </div>
   </div>
 
- <!--  Form -->
- 
+  <!--  Form -->
+
   <h5>Есть вопросы?</h5>
   <h5>Свяжитесь с нами!</h5>
   <div class="contact-form_container">
-    <form class="form">
+    <form class="form" (ngSubmit)="onSubmit()">
       <div>
         <label for="name">Имя</label>
-        <input type="text" id="name" name="firstName" placeholder="Имя" />
-        <input type="text" id="name" name="lastName" placeholder="Фамилия" />
+        <input
+          type="text"
+          id="name"
+          name="firstName"
+          placeholder="Имя"
+          [(ngModel)]="contactForm.firstName"
+          required
+        />
+        <input
+          type="text"
+          id="name"
+          name="lastName"
+          placeholder="Фамилия"
+          [(ngModel)]="contactForm.lastName"
+          required
+        />
       </div>
 
       <div>
@@ -59,6 +73,8 @@
           id="email"
           name="yourEmail"
           placeholder="your_mail@mail.com"
+          [(ngModel)]="contactForm.email"
+          required
         />
       </div>
 
@@ -69,20 +85,33 @@
           id="phone"
           name="phone"
           placeholder="+375 29 000 00 00"
+          [(ngModel)]="contactForm.phone"
+          required
         />
       </div>
 
       <div>
         <label for="subject" id="topic">Тема*</label>
-        <input type="topic" id="topic" name="topic" placeholder="Тема" />
+        <input
+          type="topic"
+          id="topic"
+          name="topic"
+          placeholder="Тема"
+          [(ngModel)]="contactForm.topic"
+        />
       </div>
 
       <div>
         <label for="Message">Сообщение*</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea
+          id="message"
+          name="message"
+          [(ngModel)]="contactForm.message"
+          required
+        ></textarea>
       </div>
     </form>
   </div>
 
-  <div class="submit-btn">Отправить сообщение</div>
+  <div class="submit-btn" (click)="printForm()">Отправить сообщение</div>
 </body>

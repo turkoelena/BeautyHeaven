@@ -4,8 +4,9 @@ body {
   color: #f0f0f0;
 }
 
-slider_container {
+.slider_container {
   height: 37vw;
+  position: relative;
 }
 
 .main-img {
@@ -28,7 +29,7 @@ slider_container {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .main-title h2 {
@@ -48,9 +49,41 @@ slider_container {
   text-shadow: 0 0 .5vw white,
                0 0 .5vw white,
                0 0 .7vw white,
-               0 0 2vw white;
-  position: relative;
+               0 0 2vw white; 
 }
+
+.promo {
+  width: 40vw;
+  position: absolute;
+  top: 10%; 
+  left: 55%;
+}
+
+.certificate {
+  width: 25vw;
+  position: relative;
+  left: 4vw;
+}
+
+.message_container { 
+  width: 90%;
+  height: 90%;
+  margin: 0 auto; 
+  background:#f8f7f6;
+  padding: .5vw 2vw;
+  border-radius: .7vw;
+  text-align: center;
+  border: .3vw solid #e4b372;
+}
+
+.message  { 
+  font-size: calc(.7vw + 1vh + 1vmin);
+  font-weight: 500;
+  color:#d57b04;  
+}
+
+
+
 
 //About
 
@@ -111,8 +144,7 @@ slider_container {
 
 .gallery li:hover {
   cursor: pointer;
-  color: #cdaa7d;
-  text-decoration: underline;
+  color: #cdaa7d; 
 }
 
 .gallery_images {
@@ -136,3 +168,4 @@ slider_container {
 .gallery_images img:hover {
   transform: scale(1.2);
 }
+

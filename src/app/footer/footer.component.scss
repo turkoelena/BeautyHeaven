@@ -29,7 +29,7 @@ footer {
 
 .contacts h2 {
   color: #cdaa7d;
-  padding-bottom: 2vh;
+  padding-bottom: 1vw;
   font-size: calc(0.8vw + 0.8vh + 0.8vmin);
 }
 
@@ -96,4 +96,51 @@ footer {
 .quick-links_container li:hover {
   color: #cdaa7d;
   text-decoration: underline;
+}
+
+/* Adaptivity */
+
+@media screen and (max-width: 960px) {
+  .main-footer_container {
+    width: 95%;
+    height: 35vh;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contacts {
+    width: 30%;
+  }
+
+  .social-media img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .contacts li {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main-footer_container {
+    height: 25vh;
+  }
+
+  .social-media img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
