@@ -18,7 +18,7 @@ export class DatabaseService {
     return this.db.collection('categories').doc(id).valueChanges({idField: 'id'});
   }
 
-  getImages(): Observable<any[]>  {
+  getImage(): Observable<any[]>  {
     return this.db.collection('gallery').valueChanges({idField: 'id'});
   }
 

@@ -28,8 +28,8 @@
             />
             <div class="message_container">
               <span class="message"
-                >Действует программа лояльности для постоянных клиентов</span
-              >
+                >Действует программа лояльности для постоянных клиентов
+              </span>
             </div>
           </div>
         </div>
@@ -39,6 +39,10 @@
             src="./assets/images/home/main-4.jpg"
             alt="img"
           />
+          <div class="special-offer_container">
+            <h1 class="offer-title">Новая услуга</h1>            
+            <h2>Уход за лицом</h2>
+          </div>
         </div>
       </div>
       <button
@@ -47,6 +51,7 @@
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Предыдущий</span>
       </button>
       <button
@@ -55,6 +60,7 @@
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Следующий</span>
       </button>
     </div>
@@ -87,19 +93,13 @@
   <div class="gallery">
     <h2 class="title">Наши работы</h2>
     <ul>
-      <li
-        *ngFor="let category of categories"
-        [routerLink]="['products']"
-        [queryParams]="{ category: category.id }"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-      >
+      <li *ngFor="let category of categories">
         {{ category.name }}
       </li>
     </ul>
 
     <div class="gallery_images">
-      <img src="{{ img.image }}" alt="img" *ngFor="let img of images" />
+      <img src="{{ image.image }}" alt="img" *ngFor="let image of images" />
       <!-- <img src="./assets/images/home/color-1.jpg" alt=""> 
             <img src="./assets/images/home/nails-1.jpg" alt="">
             <img src="./assets/images/home/makeup-2.jpg" alt="">

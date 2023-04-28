@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.getAllCategories();
-    this.getImage();
+    this.getImages();
 
     this.route.url.subscribe((url) => {
       const header: any = document.querySelector('app-header');
@@ -46,9 +46,24 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  getImage() {
+  getRouteParams() {
+    return this.route.queryParams.subscribe((params: any) => {
+      if (params.category) {
+        this.categorySubscribe = this.databaseService
+          .getCategory(params.category)
+          .subscribe((category: any) => {
+            this.category = category;
+            this.getImages();
+          });
+      } else {
+        this.getImages();
+      }
+    });
+  }
+
+  getImages() {
     this.imagesSubscribe = this.databaseService
-      .getImages()
+      .getImage()
       .subscribe(async (images: any) => {
         this.category?.id ? this.findCategory(images) : (this.images = images);
       });
@@ -56,7 +71,7 @@ export class HomeComponent implements OnInit {
 
   findCategory(images: any[]) {
     this.images = images.reduce((acc, item) => {
-      if (item.category === this.category.id) {
+      if (item.category === this.category) {
         acc.push(item);
       }
       return acc;

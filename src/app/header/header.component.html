@@ -38,10 +38,13 @@
       <li>+375(44)00-00-00</li>
       <li>ул. Братьев Райт, 25</li>
     </ul>
-    <div class="social-media">
-      <img src="./assets/images/footer/fb.jpg" alt="img" />
-      <img src="./assets/images/footer/insta.jpg" alt="img" />
-      <img src="./assets/images/footer/viber.jpg" alt="img" />
+    <div class="logo_container">
+      <img
+        class="logo-mobile"
+        src="./assets/images/header/logo.jpg"
+        alt="img"
+        [routerLink]="['/']"
+      />
     </div>
 
     <div class="btn-group">
@@ -61,7 +64,8 @@
             [routerLink]="['/']"
             routerLinkActive="active-mobile"
             [routerLinkActiveOptions]="{ exact: true }"
-            >Главная</span>
+            >Главная</span
+          >
         </li>
 
         <li>
@@ -69,7 +73,8 @@
             class="nav-item"
             [routerLink]="['/products']"
             routerLinkActive="active-mobile"
-            >Наши услуги</span>            
+            >Наши услуги</span
+          >
         </li>
 
         <li>
@@ -77,7 +82,8 @@
             class="nav-item"
             [routerLink]="['/team']"
             routerLinkActive="active-mobile"
-            >Мастера</span>
+            >Мастера</span
+          >
         </li>
 
         <li>
@@ -85,7 +91,8 @@
             class="nav-item"
             [routerLink]="['/contacts']"
             routerLinkActive="active-mobile"
-            >Контакты</span>
+            >Контакты</span
+          >
         </li>
 
         <li>
@@ -93,7 +100,8 @@
             class="nav-item"
             [routerLink]="['/gallery']"
             routerLinkActive="active-mobile"
-            >Фотогалерея</span>
+            >Фотогалерея</span
+          >
         </li>
       </ul>
     </div>
