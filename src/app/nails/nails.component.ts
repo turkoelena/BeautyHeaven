@@ -3,9 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-product',
   templateUrl: './nails.component.html',
-  styleUrls: ['./nails.component.scss']
+  styleUrls: ['./nails.component.scss'],
 })
-export class NailsComponent {
-
-
-}
+export class NailsComponent {}

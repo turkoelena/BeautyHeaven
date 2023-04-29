@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent} from './home/home.component'; 
+import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { NailsComponent } from './nails/nails.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -12,9 +12,6 @@ import { HaircolorComponent } from './haircolor/haircolor.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { BrowsComponent } from './brows/brows.component';
 import { MassageComponent } from './massage/massage.component';
-
-
-
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,13 +26,14 @@ const routes: Routes = [
   { path: 'makeup', component: MakeupComponent },
   { path: 'brows', component: BrowsComponent },
   { path: 'massage', component: MassageComponent },
-  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration:'enabled'
-  })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule } from '@angular/forms';
-
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,19 +11,15 @@ import { NailsComponent } from './nails/nails.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
 import { ContactsComponent } from './contacts/contacts.component';
-
 import { environment } from './../environment/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-
-import  { DatabaseService} from './services/database.service';
 import { PricesComponent } from './prices/prices.component';
 import { HaircutComponent } from './haircut/haircut.component';
 import { HaircolorComponent } from './haircolor/haircolor.component';
 import { MakeupComponent } from './makeup/makeup.component';
 import { BrowsComponent } from './brows/brows.component';
 import { MassageComponent } from './massage/massage.component';
-
 
 @NgModule({
   declarations: [
@@ -51,13 +45,10 @@ import { MassageComponent } from './massage/massage.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    FormsModule,  
+    FormsModule,
   ],
-  
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { 
-  
-  
-}
+export class AppModule {}
