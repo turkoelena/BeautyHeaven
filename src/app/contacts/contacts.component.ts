@@ -23,7 +23,6 @@ export class ContactsComponent {
     }
 
     onSubmit(): void {
-      console.warn('Ваш запрос отправлен');
-      this.contactForm.reset();
+      Object.keys(this.contactForm).forEach(key => this.contactForm[key] = "");      
     }
 }

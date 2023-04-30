@@ -91,24 +91,13 @@
   <div class="gallery">
     <h2 class="title">Наши работы</h2>
     <ul>
-      <li *ngFor="let category of categories">
+      <li *ngFor="let category of categories" (click)="getImageCategory(category.id)">
         {{ category.name }}
       </li>
     </ul>
 
     <div class="gallery_images">
       <img src="{{ image.image }}" alt="img" *ngFor="let image of images" />
-      <!-- <img src="./assets/images/home/color-1.jpg" alt=""> 
-            <img src="./assets/images/home/nails-1.jpg" alt="">
-            <img src="./assets/images/home/makeup-2.jpg" alt="">
-            <img src="./assets/images/home/cut-2.jpg" alt="">
-            <img src="./assets/images/home/massage-1.jpg" alt="">
-            <img src="./assets/images/home/brows-2.jpg" alt="">
-            <img src="./assets/images/home/cut-3.jpg" alt="">
-            <img src="./assets/images/home/color-2.jpg" alt="">
-            <img src="./assets/images/home/nails-3.jpg" alt="">
-            <img src="./assets/images/home/makeup-3.jpg" alt="">
-            <img src="./assets/images/home/cut-4.jpg" alt=""> -->
     </div>
   </div>
 </body>

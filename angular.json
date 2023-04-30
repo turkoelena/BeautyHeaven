@@ -92,11 +92,20 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
-              "src/styles.scss"              
+            "styles": [
+              "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"             
+              "node_modules/jquery/dist/jquery.min.js"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         }
@@ -104,6 +113,9 @@
     }
   },
   "cli": {
-    "analytics": "fe1c1c63-941b-4c27-afc3-5715c4ca525a"
+    "analytics": "fe1c1c63-941b-4c27-afc3-5715c4ca525a",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

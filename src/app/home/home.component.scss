@@ -1,4 +1,4 @@
-body {  
+body {
   color: #f0f0f0;
 }
 
@@ -155,9 +155,12 @@ body {
 }
 
 .gallery ul {
+  width: 70% auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
+  padding-left: 0;
   padding-bottom: 3vw;
 }
 
@@ -231,5 +234,35 @@ body {
   .gallery_images img {
     width: 220px;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main-title h2 {
+    display: none;
+  }
+
+  .main-title h3 {
+    font-size: 8vmin;
+  }
+
+  .about p:last-child {
+    display: none;
+  }
+
+  .gallery_images img {
+    width: 38vmin;
+    height: 48vmin;
+    margin-bottom: 3vmin;
+  }
+
+  .gallery ul {
+    width: 70% auto;
+    justify-content: space-evenly;
+  }
+
+  .gallery li {
+    font-size: 3.2vmin;
+    margin: 0;
   }
 }

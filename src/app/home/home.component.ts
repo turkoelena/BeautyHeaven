@@ -46,35 +46,25 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  getRouteParams() {
-    return this.route.queryParams.subscribe((params: any) => {
-      if (params.category) {
-        this.categorySubscribe = this.databaseService
-          .getCategory(params.category)
-          .subscribe((category: any) => {
-            this.category = category;
-            this.getImages();
-          });
-      } else {
-        this.getImages();
-      }
-    });
-  }
-
   getImages() {
     this.imagesSubscribe = this.databaseService
       .getImage()
       .subscribe(async (images: any) => {
-        this.category?.id ? this.findCategory(images) : (this.images = images);
+        this.category ? this.findCategory(images) : (this.images = images);
       });
   }
 
-  findCategory(images: any[]) {
+   findCategory(images: any[]) {
     this.images = images.reduce((acc, item) => {
       if (item.category === this.category) {
         acc.push(item);
       }
       return acc;
     }, []);
+  } 
+
+  getImageCategory(id: string) {
+    this.category = id;
+    this.getImages();
   }
 }

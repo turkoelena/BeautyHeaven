@@ -23,12 +23,14 @@ header {
   bottom: 3.5vh;
   box-shadow: #cdaa7d 0.1vw 0.1vw 0.2vw 0;
   margin: 0 2vw;
+  cursor: pointer;
 }
 
 .insta {
   width: 2vw;
   height: 2vw;
   border-radius: 0.5vw;
+  cursor: pointer;
 }
 
 .logo:hover,
@@ -83,10 +85,14 @@ header {
   justify-content: space-between;
   align-items: center;
   display: none;
+  border-bottom: 1px solid #cdaa7d;
+  padding-bottom: 2vmin;
 }
+
 .logo_container {
   width: 30%;
 }
+
 .logo-mobile {
   width: 4rem;
   height: 4rem;
@@ -106,6 +112,7 @@ header {
 
 .contacts li {
   font-size: 0.7rem;
+  line-height: 200%;
 }
 
 .btn-secondary {
@@ -128,6 +135,7 @@ header {
   font-size: 12px;
   line-height: 200%;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .active-mobile {
@@ -164,5 +172,20 @@ header {
 
   .header_mobile {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    height: 30vmin;
+  }
+
+  .contacts li {
+    font-size: 2.5vmin;
+  }
+
+  .header_menu {
+    width: 5vmin;
+    height: 3vmin;
   }
 }
