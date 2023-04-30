@@ -180,6 +180,10 @@ header {
     height: 30vmin;
   }
 
+  .logo-mobile {
+    box-shadow: #cdaa7d 0.2vmin 0.2vmin 0.4vmin 0;
+  }
+
   .contacts li {
     font-size: 2.5vmin;
   }
@@ -187,5 +191,10 @@ header {
   .header_menu {
     width: 5vmin;
     height: 3vmin;
+  }
+
+  .dropdown-menu {
+    font-size: 3vmin;
+    line-height: 250%;
   }
 }

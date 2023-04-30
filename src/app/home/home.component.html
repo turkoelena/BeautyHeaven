@@ -91,7 +91,10 @@
   <div class="gallery">
     <h2 class="title">Наши работы</h2>
     <ul>
-      <li *ngFor="let category of categories" (click)="getImageCategory(category.id)">
+      <li
+        *ngFor="let category of categories"
+        (click)="getImageCategory(category.id)"
+      >
         {{ category.name }}
       </li>
     </ul>

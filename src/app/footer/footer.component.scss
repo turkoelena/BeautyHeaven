@@ -126,7 +126,7 @@ footer {
 
   .logo {
     width: 3rem;
-    height: 3rem;
+    height: 3rem;    
   }
 
   .phone {
@@ -151,32 +151,35 @@ footer {
 
 @media screen and (max-width: 440px) {
   footer {
-    width: 70% auto;
+    padding: 0 1vmin;
   }
 
   .contacts {
-    width: 28%;
+    width: 30%;
   }
   .logo_container {
-    width: 28%;
+    width: 24%;
+    position: relative;
+    top: -4vmin;
   }
 
   .logo {
     margin-bottom: 2vmin;
   }
   .contacts li {
-     font-size: 2.2vmin;
+     font-size: 2.3vmin;
+     line-height: 200%;
   }
   .quick-links_container li {
     width: 30%;
   }
 
   .quick-links_container li {
-    line-height: 200%;
+    line-height: 220%;
   }
 
-  .quick-links_container ul {
+  .quick-links_container ul:last-child {
     list-style: none;
-    padding-left: 3vmn;
+    padding-left: 3vmin;
   }
 }
