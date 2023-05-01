@@ -46,72 +46,91 @@
   <h5>Свяжитесь с нами!</h5>
   <div class="contact-form_container">
     <form class="form" (ngSubmit)="onSubmit()">
-      <div>
-        <label for="name">Имя</label>
+      <div class="form-group">
+        <label for="name">Имя*</label>
         <input
-          type="text"
-          id="name"
-          name="firstName"
+          class="form-control"
+          name="name"
           placeholder="Имя"
-          [(ngModel)]="contactForm.firstName"
+          [(ngModel)]="contactForm.name"
+          #name="ngModel"
           required
         />
-        <input
-          type="text"
-          id="name"
-          name="lastName"
-          placeholder="Фамилия"
-          [(ngModel)]="contactForm.lastName"
-          required
-        />
+        <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+          Не указано имя
+        </div>
       </div>
 
-      <div>
-        <label for="email">Email</label>
+      <div class="form-group">
+        <label for="email">Email*</label>
         <input
-          type="email"
-          id="email"
-          name="yourEmail"
+          class="form-control"
+          name="Email"
           placeholder="your_mail@mail.com"
           [(ngModel)]="contactForm.email"
+          #email="ngModel"
           required
+          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
         />
+        <div
+          [hidden]="email.valid || email.untouched"
+          class="alert alert-danger"
+        >
+          Некорректный email
+        </div>
+        
       </div>
 
-      <div>
-        <label for="phone">Телефон*</label>
+      <div class="form-group">
+        <label>Телефон*</label>
         <input
-          type="phone"
-          id="phone"
+          class="form-control"
           name="phone"
-          placeholder="+375 29 000 00 00"
+          placeholder="375290000000"
           [(ngModel)]="contactForm.phone"
+          #phone="ngModel"
           required
+          pattern="[0-9]{12}"
         />
+        <div
+          [hidden]="phone.valid || phone.untouched"
+          class="alert alert-danger"
+        >
+          Введите номер в правильном формате
+        </div>
       </div>
 
-      <div>
-        <label for="subject" id="topic">Тема*</label>
+      <div class="form-group">
+        <label for="subject">Тема</label>
         <input
-          type="topic"
-          id="topic"
-          name="topic"
+          class="form-control"
+          name="subject"
           placeholder="Тема"
-          [(ngModel)]="contactForm.topic"
+          max="30"
+          required
+          [(ngModel)]="contactForm.subject"
+          #subject="ngModel"
         />
       </div>
 
-      <div>
-        <label for="Message">Сообщение*</label>
+      <div class="form-group">
+        <label for="message">Сообщение*</label>
         <textarea
-          id="message"
+          class="form-control"
           name="message"
+          placeholder="Сообщение"
+          max="150"
           [(ngModel)]="contactForm.message"
+          #message="ngModel"
           required
         ></textarea>
       </div>
+      <div class="alert alert-success" role="alert">
+        <p>Ваше сообщение успешно отправлено. Мы обязательно свяжемся с Вами!</p>
+      </div>
     </form>
   </div>
+  
+    <div class="submit-btn"  click="onSubmit()">Отправить сообщение</div>
 
-  <div class="submit-btn" (click)="onSubmit()">Отправить сообщение</div>
 </body>

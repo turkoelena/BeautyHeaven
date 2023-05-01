@@ -238,13 +238,16 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-  .main-img, .slider_container {
-    height: 48vmin;    
+  .main-img,
+  .slider_container {
+    height: 48vmin;
   }
 
-  .main-title {   
+  .main-title {
     height: 60%;
     top: 20%;
+    backdrop-filter: blur(0.3vh);
+    border-radius: 0.5vh;
   }
 
   .main-title h2 {
@@ -254,9 +257,14 @@ body {
   .main-title h3 {
     font-size: 8vmin;
   }
-  
+
+  .about {
+    width: 80%;
+  }
+
   .about p {
-    font-size: 3.2vmin;
+    font-size: 3.4vmin;
+    line-height: 180%;
   }
 
   .about p:last-child {
@@ -270,7 +278,7 @@ body {
   }
 
   .gallery ul {
-   padding: 0 4vmin;
+    padding: 0 4vmin;
     justify-content: space-evenly;
   }
 

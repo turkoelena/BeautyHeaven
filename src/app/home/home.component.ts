@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatabaseService } from './../services/database.service';
 
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.getAllCategories();
     this.getImages();
 
-    this.route.url.subscribe((url) => {
+    this.route.url.subscribe(() => {
       const header: any = document.querySelector('app-header');
       header.style.position = 'sticky';
       header.style.top = '0';
@@ -54,14 +54,14 @@ export class HomeComponent implements OnInit {
       });
   }
 
-   findCategory(images: any[]) {
+  findCategory(images: any[]) {
     this.images = images.reduce((acc, item) => {
       if (item.category === this.category) {
         acc.push(item);
       }
       return acc;
     }, []);
-  } 
+  }
 
   getImageCategory(id: string) {
     this.category = id;

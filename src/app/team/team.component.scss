@@ -100,7 +100,19 @@ body {
     margin-bottom: 0;
     line-height: 200%;
   }
+
   .person_container p {
     font-size: 3.2vmin;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .person_container h4 {
+    font-size: 3.5vmin;
+    padding-top: 2vmin;
+  }
+
+  .person_container p {
+    font-size: 2.9vmin;
   }
 }
