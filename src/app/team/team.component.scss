@@ -87,6 +87,7 @@ body {
   .person {
     width: 35vmin;
     height: 35vmin;
+    border: 0.5vh solid #f8d881;
   }
 
   .person img {
@@ -107,12 +108,16 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  .person {
+    width: 40vmin;
+    height: 40vmin;
+  }
   .person_container h4 {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     padding-top: 2vmin;
   }
 
   .person_container p {
-    font-size: 2.6vmin;
+    font-size: 3vmin;
   }
 }
