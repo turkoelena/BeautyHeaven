@@ -108,16 +108,27 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  body {
+    padding-bottom: 10vmin;
+  }
+  .main-title {
+    font-size: 6vmin;
+    padding: 9vmin;
+  }
+  .person_container {
+    width: 80% auto;
+    margin-bottom: 5vmin;
+  }
   .person {
-    width: 40vmin;
-    height: 40vmin;
+    width: 60vmin;
+    height: 60vmin;
   }
   .person_container h4 {
-    font-size: 3.5vmin;
-    padding-top: 2vmin;
+    font-size: 5.3vmin;
+    padding-top: 3.5vmin;
   }
 
   .person_container p {
-    font-size: 3vmin;
+    font-size: 4.8vmin;
   }
 }
