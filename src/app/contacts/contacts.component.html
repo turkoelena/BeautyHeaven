@@ -45,7 +45,7 @@
   <h5>Есть вопросы?</h5>
   <h5>Свяжитесь с нами!</h5>
   <div class="contact-form_container">
-    <form class="form" (ngSubmit)="onSubmit()">
+    <form class="form">
       <div class="form-group">
         <label for="name">Имя*</label>
         <input
@@ -54,7 +54,7 @@
           placeholder="Имя"
           [(ngModel)]="contactForm.name"
           #name="ngModel"
-          required
+          required          
         />
         <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
           Не указано имя

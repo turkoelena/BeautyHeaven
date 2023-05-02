@@ -13,7 +13,7 @@ body {
 }
 
 .main-image_container img {
-  width: 100%;  
+  width: 100%;
 }
 
 .main-image_container h2 {
@@ -80,6 +80,12 @@ iframe {
   height: 3vw;
   margin: 0 1vw;
   margin-top: 5vh;
+  cursor: pointer;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+  box-shadow: #cdaa7d 0.2vw 0.2vw 0.5vw 0;
 }
 
 .contact-form_container {
@@ -114,7 +120,7 @@ input.ng-touched.ng-invalid {
 }
 
 input .ng-dirty.ng-touched.ng-valid {
-  border: solid #cdaa7d 2px;  
+  border: solid #cdaa7d 2px;
 }
 
 input,
@@ -153,7 +159,7 @@ textarea {
 
 .alert-danger {
   color: rgb(236, 18, 18);
-  font-size: calc(0.4vw + 0.4vh + 0.6vmin); 
+  font-size: calc(0.4vw + 0.4vh + 0.6vmin);
   height: 3vmin;
   background-color: #f8f4f4e6;
   position: relative;
@@ -161,20 +167,20 @@ textarea {
 }
 
 .alert-success {
-  width: 80% auto; 
+  width: 80% auto 0;
   height: 2.5vw;
   text-align: center;
-  padding: .4vw;
+  padding: 0.4vw;
   margin-top: 7vmin;
   display: none;
 }
 
 .alert-success p {
-  padding-bottom: 0;  
+  padding-bottom: 0;
 }
 
 .submit-btn {
-  width: 50%;  
+  width: 50%;
   height: 3.5vw;
   margin: 0 auto;
   background-color: transparent;
@@ -190,6 +196,7 @@ textarea {
   color: #111111;
   font-size: calc(0.6vw + 0.5vh + 0.5vmin);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -197,25 +204,24 @@ textarea {
 }
 
 @media screen and (max-width: 960px) {
-
   .main-image_container {
-    padding-bottom : 10vmin;
+    padding-bottom: 10vmin;
   }
 
   .contacts_container {
     width: 80% auto;
     flex-direction: column;
-    margin-right: 0;  
-    padding-bottom: 15vmin;   
+    margin-right: 0;
+    padding-bottom: 15vmin;
   }
 
   .map {
-    width: 80% ;
+    width: 80%;
     order: 2;
   }
 
   iframe {
-    width:100%;
+    width: 100%;
     height: 60vmin;
   }
 
@@ -225,32 +231,66 @@ textarea {
     margin-bottom: 10vmin;
   }
 
-  .address h4  {
+  .address h4 {
     font-size: 4vmin;
     padding-bottom: 2.5vmin;
   }
 
-.phone,
-.location {
-  font-size: 2.8vmin;
-  height: 7vmin;
+  .phone,
+  .location {
+    font-size: 2.8vmin;
+    height: 7vmin;
   }
 
-  .social-media img{
+  .social-media img {
     width: 2rem;
     height: 2rem;
-    
   }
 }
 
 @media screen and (max-width: 770px) {
   .contact-form_container {
-    width: 90%; 
-    
+    width: 90%;
+    padding-top: 2vmin;
   }
 
-.form {
-width: 90%;
-margin: 0 auto;
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input,
+  textarea {
+    width: 73%;
+    height: 6vmin;
+    font-size: 2.8vmin;
+  }
+
+  ::placeholder {
+    font-size: 2.6vmin;
+  }
+  
+  label {
+    font-size: 2.5vmin;
+  }
+
+  .alert-danger {
+    width: 73%;
+    height: 5vmin;
+    font-size: 2vmin;
+    top: -2.3vmin;
+  }
+
+  .submit-btn {
+    height: 5.5vmin;
+    font-size: 2.5vmin;
+    border-radius: 3px;
+    margin-top: 3vmin;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .main-image_container h2 {
+    top: 40vmin;
+  }
 }

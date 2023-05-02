@@ -14,15 +14,11 @@ export class ContactsComponent {
     message: '',
   };
 
-  printForm() {
-    console.log(this.contactForm);
-  }
-
   onSubmit(): void {
     Object.keys(this.contactForm).forEach(
       (key) => (this.contactForm[key] = '')
     );
     const successMessage: any = document.querySelector('.alert-success');
-    successMessage.style.display = 'block';
+    successMessage.style.display = 'block';    
   }
 }

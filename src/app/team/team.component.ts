@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss'],
 })
-export class TeamComponent implements OnInit, OnDestroy {
+export class TeamComponent implements OnInit {
   public person: any;
   private personSubscribe: any;
 
