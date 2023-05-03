@@ -124,7 +124,7 @@
         ></textarea>
       </div>
 
-      <div class="alert alert-success" role="alert" [ngClass]="{invisible: visibility}">
+      <div class="alert alert-success" role="alert" *ngIf="!visibility">
         <p>
           Ваше сообщение успешно отправлено. Мы обязательно свяжемся с Вами!
         </p>
@@ -132,5 +132,5 @@
     </form>
   </div>
 
-  <div class="submit-btn" click="toggle()">Отправить сообщение</div>
+  <div class="submit-btn" click="onSubmit()">Отправить сообщение</div>
 </body>

@@ -16,12 +16,8 @@ export class ContactsComponent {
 
   public visibility: boolean = true;
 
-  toggle() {
-    this.visibility = !this.visibility;
-  }
-
-  onSubmit(): void {   
-
+  onSubmit(): void {
+    this.visibility = false;
     setTimeout(() =>
       Object.keys(this.contactForm).forEach(
         (key) => (this.contactForm[key] = '')

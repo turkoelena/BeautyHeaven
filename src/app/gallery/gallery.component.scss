@@ -38,3 +38,18 @@ h2 {
   border-radius: 5px;
   box-shadow: 0px 2px 5px 1px rgb(117, 117, 117);
 }
+
+@media screen and (max-width: 450px) {
+  .gallery_images div {
+    width: 250px;
+    height: 315px;
+    margin: 0 10;
+  }
+
+  .gallery_images img {
+    width: 250px;
+    height: 315px;
+  }
+}
+
+
