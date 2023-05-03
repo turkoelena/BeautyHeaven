@@ -14,14 +14,18 @@ export class ContactsComponent {
     message: '',
   };
 
-  onSubmit(): void {
-    const successMessage: any = document.querySelector('.alert-success');
-    successMessage.style.display = 'block';
+  public visibility: boolean = true;
+
+  toggle() {
+    this.visibility = !this.visibility;
+  }
+
+  onSubmit(): void {   
 
     setTimeout(() =>
       Object.keys(this.contactForm).forEach(
         (key) => (this.contactForm[key] = '')
       )
-    ),5000;    
+    ),5000;
   }
 }

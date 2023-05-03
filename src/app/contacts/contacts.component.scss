@@ -172,12 +172,16 @@ textarea {
   text-align: center;
   padding: 0.4vw;
   margin-top: 7vmin;
-  display: none;
 }
 
 .alert-success p {
   padding-bottom: 0;
 }
+
+.invisible {
+  display: none;
+}
+
 
 .submit-btn {
   width: 50%;
@@ -269,7 +273,7 @@ textarea {
   ::placeholder {
     font-size: 2.6vmin;
   }
-  
+
   label {
     font-size: 2.5vmin;
   }
