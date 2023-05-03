@@ -15,10 +15,13 @@ export class ContactsComponent {
   };
 
   onSubmit(): void {
-    Object.keys(this.contactForm).forEach(
-      (key) => (this.contactForm[key] = '')
-    );
     const successMessage: any = document.querySelector('.alert-success');
-    successMessage.style.display = 'block';    
+    successMessage.style.display = 'block';
+
+    setTimeout(() =>
+      Object.keys(this.contactForm).forEach(
+        (key) => (this.contactForm[key] = '')
+      )
+    ),5000;    
   }
 }

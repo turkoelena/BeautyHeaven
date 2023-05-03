@@ -54,7 +54,7 @@
           placeholder="Имя"
           [(ngModel)]="contactForm.name"
           #name="ngModel"
-          required          
+          required
         />
         <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
           Не указано имя
@@ -70,7 +70,7 @@
           [(ngModel)]="contactForm.email"
           #email="ngModel"
           required
-          pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
         />
         <div
           [hidden]="email.valid || email.untouched"
@@ -78,7 +78,6 @@
         >
           Некорректный email
         </div>
-        
       </div>
 
       <div class="form-group">
@@ -114,7 +113,7 @@
       </div>
 
       <div class="form-group">
-        <label for="message">Сообщение*</label>
+        <label for="message">Сообщение</label>
         <textarea
           class="form-control"
           name="message"
@@ -122,15 +121,16 @@
           max="150"
           [(ngModel)]="contactForm.message"
           #message="ngModel"
-          required
         ></textarea>
       </div>
+
       <div class="alert alert-success" role="alert">
-        <p>Ваше сообщение успешно отправлено. Мы обязательно свяжемся с Вами!</p>
+        <p>
+          Ваше сообщение успешно отправлено. Мы обязательно свяжемся с Вами!
+        </p>
       </div>
     </form>
   </div>
-  
-    <div class="submit-btn"  click="onSubmit()">Отправить сообщение</div>
 
+  <div class="submit-btn" click="onSubmit()">Отправить сообщение</div>
 </body>
