@@ -40,15 +40,28 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
+  body {
+    padding: 8vmin 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 7vmin;
+  }
+
   .gallery_images div {
     width: 250px;
     height: 315px;
-    margin: 0 10;
+    margin: 30px 0;
   }
 
   .gallery_images img {
     width: 250px;
     height: 315px;
+    right: 10px;
+    top: 10px;
   }
 }
 

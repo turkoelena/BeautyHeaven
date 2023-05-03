@@ -56,7 +56,11 @@
           #name="ngModel"
           required
         />
-        <div [hidden]="name.valid || name.untouched" class="alert alert-danger">
+        <div
+          [hidden]="name.valid || name.untouched"
+          class="alert alert-danger"
+          *ngIf="!visibility"
+        >
           Не указано имя
         </div>
       </div>
@@ -75,6 +79,7 @@
         <div
           [hidden]="email.valid || email.untouched"
           class="alert alert-danger"
+          *ngIf="!visibility"
         >
           Некорректный email
         </div>
@@ -94,6 +99,7 @@
         <div
           [hidden]="phone.valid || phone.untouched"
           class="alert alert-danger"
+          *ngIf="!visibility"
         >
           Введите номер в правильном формате: 375290000000
         </div>
@@ -124,13 +130,18 @@
         ></textarea>
       </div>
 
-      <div class="alert alert-success" role="alert" *ngIf="!visibility">
-        <p>
-          Ваше сообщение успешно отправлено. Мы обязательно свяжемся с Вами!
+      <div class="alert alert-success" role="alert" *ngIf="visibility">
+        <p
+          [ngClass]="{
+            'status-success': messageStatus === true,
+            'status-error': messageStatus === false
+          }"
+        >
+          {{ messageSubmit }}
         </p>
       </div>
     </form>
   </div>
 
-  <div class="submit-btn" click="onSubmit()">Отправить сообщение</div>
+  <div class="submit-btn" (click)="onSubmit()">Отправить сообщение</div>
 </body>

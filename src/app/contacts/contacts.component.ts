@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacts.component.scss'],
 })
 export class ContactsComponent {
+  public messageSubmit: string = '';
+  public messageStatus: boolean = false;
+
   contactForm: any = {
     name: '',
     email: '',
@@ -14,14 +17,24 @@ export class ContactsComponent {
     message: '',
   };
 
-  public visibility: boolean = true;
+  public visibility: boolean = false;
 
   onSubmit(): void {
-    this.visibility = false;
-    setTimeout(() =>
+    if (
+      !this.contactForm.name ||
+      !this.contactForm.email ||
+      !this.contactForm.phone
+    ) {
+      this.messageSubmit = 'Поля формы заполнены некорректно!';
+      this.visibility = true;
+      this.messageStatus = false;
+    } else {
+      this.messageStatus = true;
+      this.visibility = true;
+      this.messageSubmit = 'Ваше сообщение успешно отправлено!';
       Object.keys(this.contactForm).forEach(
         (key) => (this.contactForm[key] = '')
-      )
-    ),5000;
+      );
+    }
   }
 }
