@@ -140,14 +140,14 @@ body {
   }
 
   .service-item p,
-.service-item span {
-  font-size: 3.5vmin;
-}
+  .service-item span {
+    font-size: 3.5vmin;
+  }
 }
 
 @media screen and (max-width: 770px) {
   .title_container {
-    width: 90%;    
+    width: 90%;
   }
 
   .icon {
@@ -173,12 +173,11 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-    .icon {
-  left: 10vmin;
+  .icon {
+    left: 7vmin;
+  }
 
-    }
-
-    .services-btn {     
-      font-size: 2.1vmin;
-    }
+  .services-btn {
+    font-size: 2.1vmin;
+  }
 }
